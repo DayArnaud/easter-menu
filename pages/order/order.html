@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <link rel="stylesheet" href="../../styles/formStyle.css" />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header-section">
+      <img
+        class="logo-header"
+        src="../../assets/heart.png"
+        alt="Logo do header em formato coração"
+      />
+      <h1 class="header-title">Cardápio de Páscoa</h1>
+      <h3 class="header-subtitle">Agenda liberada!</h3>
+    </header>
+
+    <main class="body-sections main-content">
+      <form class="order" id="orderForm">
+        <section>
+          <span>Produto:</span>
+
+          <label>
+            <input type="checkbox" name="product" value="kit-bombons" /> Kit de
+            bombons
+          </label>
+          <label>
+            <input type="checkbox" name="product" value="ovos-colher" /> Ovos de
+            colher
+          </label>
+          <label>
+            <input type="checkbox" name="product" value="ovos-pascoa" /> Ovos de
+            Páscoa
+          </label>
+        </section>
+
+        <section>
+          <legend>Sabores:</legend>
+
+          <label>
+            <input type="checkbox" name="flavor" value="limao" /> Limão
+          </label>
+          <label>
+            <input type="checkbox" name="flavor" value="brigadeiro" />
+            Brigadeiro
+          </label>
+          <label>
+            <input type="checkbox" name="flavor" value="leite" /> Leite
+          </label>
+        </section>
+
+        <label for="quantity">Quantidade:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required />
+
+        <label for="whatsapp">Telefone WhatsApp de contato:</label>
+        <input
+          type="tel"
+          id="whatsapp"
+          name="whatsapp"
+          placeholder="+55..."
+          required
+        />
+
+        <button type="submit">Enviar Pedido</button>
+      </form>
+
+      <script>
+        document.getElementById("orderForm").onsubmit = function (event) {
+          event.preventDefault();
+          alert(
+            "Pedido enviado. Entraremos em contato para finalizar a compra."
+          );
+        };
+      </script>
+    </main>
+
+    <footer class="info-footer">
+      <h3>(11) 99999-9999</h3>
+      <h4>Dona Benta</h4>
+    </footer>
+  </body>
+</html>

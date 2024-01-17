@@ -1,0 +1,49 @@
+section {
+  margin: 20px 50px 20px 50px;
+  border: none;
+  color: #8d4a1a;
+}
+
+.order {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 0 50px 10px 50px;
+  color: #8d4a1a;
+}
+
+input[type="checkbox"] {
+  margin: 0 50px 30px 50px;
+}
+
+input[type="number"] {
+  margin-bottom: 20px;
+  display: block;
+}
+
+input[type="tel"] {
+  display: block;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"],
+input[type="number"],
+input[type="tel"] {
+  margin-left: 50px;
+}
+
+button {
+  background-color: white;
+  color: #8d4a1a;
+  padding: 15px 20px;
+  margin: 10px 50px 50px 50px;
+  border: 1px solid #8d4a1a;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8d4a1a;
+}

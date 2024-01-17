@@ -1,0 +1,137 @@
+.header-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  background-color: #ffe1e1;
+}
+
+.header-title {
+  font-size: 36.2px;
+}
+
+.header-subtitle {
+  font-size: 32px;
+  color: #8d4a1a;
+  padding-top: 5px;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.body-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.logo-header {
+  width: 52px;
+  height: 52px;
+  margin-top: 5px;
+}
+
+.candy-sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 0 3px 0;
+}
+
+.candy-titles {
+  font-family: "Rochester", "cursive";
+  font-weight: 400px;
+  font-size: 42px;
+  color: #8d4a1a;
+}
+
+.list {
+  margin-top: 12px;
+}
+
+.list li {
+  font-weight: bold;
+}
+
+.trufas,
+.ovo-colher,
+.ovo-pascoa {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  border: 2px solid #8d4a1a;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.trufas:hover,
+.ovo-colher:hover,
+.ovo-pascoa:hover {
+  opacity: 0.7;
+}
+
+.ovo-colher {
+  margin-left: 25px;
+}
+
+.info-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400px;
+  padding: 20px 0 20px 0;
+  background-color: #ffe1e1;
+}
+
+.pedido {
+  width: 120px;
+  height: 42px;
+  margin-bottom: 12px;
+  border: 1px solid #8d4a1a;
+  border-radius: 7px;
+  background-color: #8d4a1a;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.pedido:hover {
+  opacity: 0.7;
+}
+
+.candies-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #8d4a1a;
+}
+
+.candies-table thead th {
+  background-color: white;
+  color: #8d4a1a;
+  padding: 10px;
+  font-family: "Rochester", cursive;
+}
+
+.candies-table tbody td {
+  background-color: #ffe1e1;
+  color: #8d4a1a;
+  padding: 10px;
+  border: 1px solid #8d4a1a;
+  text-align: center;
+}
+
+.candies-table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.candies-table tbody tr:hover {
+  background-color: #f7d6d6;
+}
